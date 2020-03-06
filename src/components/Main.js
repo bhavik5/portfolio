@@ -12,7 +12,6 @@ class Main extends React.Component {
   }
 
   render() {
-    console.log(calculateExperience(new Date('2017/12/18')))
     let totalExperience = calculateExperience(new Date('2017/12/18'))
     totalExperience = totalExperience.includes('Month') ? totalExperience.replace('Years', 'Years &') : 'Years'
     totalExperience += ' of '
@@ -23,6 +22,7 @@ class Main extends React.Component {
           <div className="main_wrap">
             <div className="logo">
               <img src="images/mobile_logo.png" alt="" />
+              <span style={{fontSize: '20px', color: '#FFFFFF'}}>Bhavik Shah | Portfolio</span>
             </div>
             <div className="trigger">
               <div className="hamburger hamburger--collapse-r">
